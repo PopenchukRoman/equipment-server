@@ -4,7 +4,7 @@
 	color: white;
 	}
 
-	/*Стиль слайдера на главной странице*/			
+			
 #photos{
 		position:absolute;
 		border-radius:5px;
@@ -19,7 +19,7 @@
 		text-align:left;
 		}
 
-	/*Стиль элементов формы*/	
+	
 .result{
 		font-weight: bold;
 		}		
