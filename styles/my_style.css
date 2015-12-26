@@ -1,0 +1,365 @@
+/* General Styles */
+	body{
+	background-color: #000;
+	color: white;
+	}
+
+	/*Стиль слайдера на главной странице*/			
+#photos{
+		position:absolute;
+		border-radius:5px;
+		background: white;
+		left:650px;
+		border: solid 2px gray;
+		top:16px;
+		height:380px;
+		width:600px;
+		overflow:hidden;
+		z-index:1;
+		text-align:left;
+		}
+
+	/*Стиль элементов формы*/	
+.result{
+		font-weight: bold;
+		}		
+#paiment{
+		text-decoration: underline;
+		}		
+#photos img {
+		position:absolute;
+		border-radius:5px;
+		opacity:1;
+		}
+				
+.left{
+	  text-align: center;
+	  }
+
+/* Picture Styles overflow:hidden;*/
+	#main{ 
+		position:absolute;
+		background:#181818;
+		color:#111;
+		left:60px;
+		top:40px; 
+		width:90%;
+		height:810px;
+		margin:5px auto;
+		border-radius:5px;
+		
+		overflow:hidden;
+		//background-repeat:no-repeat;
+	}
+	#main > li, #main > ul > li { list-style:none; float:left; }
+	#main ul a {
+		display:block;
+		padding:6px 10px;
+		text-decoration:none!important;
+		margin:1px;
+		margin-left:0;
+		color:#FFF;
+		background:#444;
+	}
+	#main ul a:hover {
+		color:#FFF;
+		background:#111;
+	}
+	#main ul a.selected {
+		margin-bottom:0;
+		color:#000;
+		background:snow;
+		border-bottom:1px solid snow;
+		cursor:default;
+	}
+	#main div a { color:#000; font-weight:bold; }
+	
+	#main div {
+		padding:10px 10px 8px 10px;
+		*padding-top:3px;
+		*margin-top:-15px;
+		clear:left;
+		}
+		
+	#TFP1-3_info {
+		background-image: url("../schems_of_area/tfp1-3_schema.jpg"); 
+	  	height:650px;
+	 	padding: 20px 20px 20px 50px;
+	  	background-repeat:no-repeat;
+	}
+
+	#MTC1_info {
+			background-image: url("../schems_of_area/mtc1_schema.jpg"); 
+			height:650px;
+			padding: 20px 20px 20px 50px;
+			background-repeat:no-repeat;
+			}
+
+#TFP4-9_info {
+	background-image: url("../schems_of_area/tfp4-9_schema.jpg"); 
+					height:650px;
+					padding: 20px 20px 20px 50px;
+					background-repeat:no-repeat;
+					}
+
+#PDM1_info 	{
+			background-image: url("../schems_of_area/pdm1_schema.jpg"); 
+			height:650px;
+			padding: 20px 20px 20px 50px;
+			background-repeat:no-repeat;
+			}
+
+#PDM2_info {
+			background-image: url("../schems_of_area/pdm2_schema.jpg"); 
+			height:650px;
+			padding: 0px 0px 0px 0px;
+			background-repeat:no-repeat;
+			}
+
+#MTC2_info {
+			background-image: url("../schems_of_area/mtc2_schema.jpg"); 
+			height:650px;
+			padding: 0px 0px 0px 0px;
+			background-repeat:no-repeat;
+			}
+
+#ATM140_info {
+			background-image: url("../schems_of_area/atm140_schema.jpg"); 
+			height:650px;
+			padding: 0px 0px 0px 0px;
+			background-repeat:no-repeat;
+			}
+
+#SD8200_info {
+			background-image: url("../schems_of_area/sd8200_schema.jpg");
+			height:650px;
+			padding: 0px 0px 0px 0px;
+			background-repeat:no-repeat;
+			}
+		
+		
+/*Стиль блоков в которых находятся таблицы с информацией об отдельных единицах оборудования*/
+ .info {
+		position:absolute;
+		top:150px;
+		left:300px;
+		width: 800px;
+		height: 500px;
+		overflow: auto;
+		background-color: #f0f0f0;
+		z-index: 30;
+		text-align:center;
+		}
+	 
+/*Стиль ячеек таблицы*/
+.info td { 
+		border-bottom: 1px solid white;
+		border-left:1px solid white;
+		border-right: 1px solid white;
+		padding: 4px;
+		}
+.info > div{
+	    border: none;
+	    padding: 5px;
+	    margin-top:5px;
+	    margin-bottom:5px;
+		}
+/*Стиль таблицы с информацией об отдельных единицах оборудования*/
+.lux	 { 
+		width: inherit; /*ширина таблицы*/
+		border: none; /*1px solid #a52a2a; /*граница таблицы*/
+		border-collapse: collapse; /*убираются двойные линии*/
+		border-spacing: 0;
+		caption-side: top;
+		}
+/*Стиль головы таблицы*/
+.lux th {
+		border-left:1px solid white;
+		border-right: 1px solid white;
+		background: #a52a2a;
+		color: white; 
+		padding: 4px;
+		}
+.lux caption {
+		background: #696969;
+		color: white;
+		border: none;
+		padding: 0px;
+		margin: 0px;
+		text-align: left;
+		}
+		
+#aim{								/*Вспомагательная кнопка для определения положения, с выводом координат при щелчке*/
+		position:absolute;
+		height: 20px;
+		width: 45px;
+		background-color: red;
+		border: 0px;
+		border-radius: 15px;
+		opacity: 0.5;
+		z-index: 30;
+		}	
+	
+.button_equip {						/*Стиль прозрачных кнопок, обозначающих единицы оборудования*/
+			position:absolute;
+			height: 20px;
+			width: 45px;
+			border: 0px;
+			background-color: #008800;
+			border-radius: 15px;
+			opacity: 0.5;
+			z-index:10;		
+			}
+	
+#CPM1_button{
+		top:263px;
+		left:20px;
+		}
+		
+#CPM2_button{  
+		top:263px;
+		left:84px;
+		}
+		
+#M7_button{   
+		top:350px;
+		left:115px;
+		}
+#M6_button{ 
+		top:376px;
+		left:165px;
+		}
+#M5_button{  
+		top:402px;
+		left:211px;
+ 		}
+#M4_button{
+		top:428px;
+		left:308px;
+		}
+#M3_button{   
+		top:454px;
+		left:475px;
+  		}
+#M2_button{ 
+		top:473px;
+		left:466px;
+  		}
+#M1_button{ 
+		top:492px;
+		left:538px;
+		}
+#M41_button{ 
+		top:661px;
+		left:498px;
+		}			
+#M42_button{ 
+		top:661px;
+		left:691px;
+		}
+#M43_button{ 
+		top:661px;
+		left:884px;
+		}
+#M31_button{ 
+		top:151px;
+		left:810px;
+		}			
+#TFP1_button{ 
+		top:598px;
+		left:406px;
+		}
+#TFP2_button{ 
+		top:598px;
+		left:600px;
+		}
+#TFP3_button{ 
+		top:598px;
+		left:795px;
+		}
+#AP238_button{ 
+		top:258px;
+		left:768px;
+		}
+#AP55_button{ 
+		top:258px;
+		left:332px;
+		}
+#YV11_button{ 
+		top:380px;
+		left:404px;
+		height:45px;
+		width:20px;
+		border: 0px;
+		}
+#YV21_button{ 
+		top:380px;
+		left:454px;
+		height:45px;
+		width:20px;
+		border: 0px;
+		}	
+#YV12_button{
+		top:380px;
+		left:597px;
+		height:45px;
+		width:20px;
+		border: 0px;
+		}
+#YV22_button{ 
+		top:380px;
+		left:648px;
+		height:45px;
+		width:20px;
+		border: 0px;
+		}
+#YV13_button{ 
+		top:380px;
+		left:791px;
+		height:45px;
+		width:20px;
+		border: 0px;
+		}
+#YV23_button{ 
+		top:380px;
+		left:843px;
+		height:45px;
+		width:20px;
+		border: 0px;
+		}
+#YV30_button{ 
+		top:206px;
+		left:841px;
+		height:45px;
+		width:20px;
+		border: 0px;
+		}		
+#YV31_button{ 
+		top:141px;
+		left:771px;
+		height:45px;
+		width:20px;
+		border: 0px;
+		}
+#YV52_button{ 
+		top:42px;
+		left:694px;
+		}	
+#YV55_button{ 
+		top:142px;
+		left:415px;
+		height:45px;
+		width:20px;
+		border: 0px;
+		}		
+#YV56_button{ 
+		top:121px;
+		left:518px;
+		height:45px;
+		width:20px;
+		border: 0px;
+		}
+#SL51_button{ 
+		top:16px;
+		left:577px;
+		}	
