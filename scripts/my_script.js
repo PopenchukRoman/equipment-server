@@ -1,8 +1,7 @@
-$(document).ready(function()
-{
-$(function(){
-alert('Подключена последняя версия jQuery через Google хостинг');
-});
+	$(document).ready(function(){
+	$(function(){
+	alert('Подключена последняя версия jQuery через Google хостинг');
+	});
 
 	/*
 			rotatePics(3)
@@ -21,17 +20,17 @@ alert('Подключена последняя версия jQuery через Go
 			};
 	*/		
 
-//Hide all item descriptions in the info box
+	//Hide all item descriptions in the info box
 	$("#infobox > div").css({"display": "none"});
 		
-//Call in the info box
+	//Call in the info box
 	$("li").click(function(){
 	$("#infobox").animate({bottom: '480px' }, 300); 
 	$("#fade_bg").fadeIn();
 	return false;
 	});
 	
-//Show description for selected item
+	//Show description for selected item
 	$("#TFP1-3").click(function(){
 	$("#TFP1-3_info").show();
 	});			
@@ -66,7 +65,7 @@ alert('Подключена последняя версия jQuery через Go
 	
 	
 	
-	var a = [$("#CPM1"), $("#CPM2"), $("#M1"), $("#M2"), $("#M3"), //Порядок должен соответствовать структуре DOM!!!
+	var a = [$("#CPM1"), $("#CPM2"), $("#M1"), $("#M2"), $("#M3"), //Порядок элементов массива должен соответствовать порядку в структуре DOM!!!
 			 $("#M4"), $("#M5"), $("#M6"), $("#M7"), $("#TFP1"),
 			 $("#TFP2"), $("#TFP3"), $("#M41"), $("#M42"), $("#M43")
 			 ];
@@ -104,7 +103,7 @@ alert('Подключена последняя версия jQuery через Go
 	$('#menue').sortable();
 	$('#aim').draggable();
 	
-	//Вычисляем координаты div-а с id=aim и высвечиваем их
+	//Вычисляем координаты div-а с id='aim' и высвечиваем их
 	//Выставляем элемен #aim, считываем координаты и вносим их в CSS для кнопки, которая должна располагаться на этом месте
 	$("#aim").click(function(){
 	alert("Top: "+aim.style.top+" "+"Left: "+aim.style.left);
