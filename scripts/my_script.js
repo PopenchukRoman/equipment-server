@@ -19,15 +19,19 @@
 			});
 			};
 	*/		
-
-	var a = [$("#CPM1"), $("#CPM2"), $("#M1"), $("#M2"), $("#M3"), //Порядок элементов массива должен соответствовать порядку в структуре DOM!!!
+	$("div .info").toggle();
+	$("div .info").click(function(){
+	  $(this).toggle();
+	});
+	
+	var equip = [$("#CPM1"), $("#CPM2"), $("#M1"), $("#M2"), $("#M3"), //Порядок элементов массива должен соответствовать порядку в структуре DOM!!!
 			 $("#M4"), $("#M5"), $("#M6"), $("#M7"), $("#TFP1"),
 			 $("#TFP2"), $("#TFP3"), $("#M41"), $("#M42"), $("#M43")
 			 ];
 		$(".button_equip").each(function(index){
 			$(this).click(function(){
-				a[index].toggle();	 
-				if(a[index].is(':visible')){
+				equip[index].toggle();	 
+				if(equip[index].is(':visible')){
 					$(this).css({'background-color':'#ff3333'}); 
 				}else{
 				$(this).css({'background-color':'#008800'}); 
