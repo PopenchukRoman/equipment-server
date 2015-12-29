@@ -22,6 +22,7 @@
 	$("div .info").toggle();
 	$("div .info").click(function(){
 	  $(this).toggle();
+	  $(".button_equip").css({'background-color':'#008800'});
 	});
 	
 	var equip = [$("#CPM1"), $("#CPM2"), $("#M1"), $("#M2"), $("#M3"), //Порядок элементов массива должен соответствовать порядку в структуре DOM!!!
