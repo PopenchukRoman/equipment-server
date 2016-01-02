@@ -3,6 +3,7 @@
 	alert('Подключена последняя версия jQuery через Google хостинг');
 	});
 
+	
 	/*
 			rotatePics(3)
 			function rotatePics(currentPhoto){
@@ -49,5 +50,24 @@
 	$("#aim").click(function(){
 	alert("Top: "+aim.style.top+" "+"Left: "+aim.style.left);
 	});
+	
+	//Заполняем данными карточки с оборудованием из базы данных
+	/*function getDBequipment(){
+		$.getJSON("service.php", function(json) {
+			
+			if (json.equipments.length > 0) {
+				$('#CPM1').empty();
+				$('#CPM2').empty();
+								
+				$.each(json.equipments,function() {
+				   var info = '<li>Name: ' +  this['name'] + ' ' +  this['part'] +  this['parameter'] + '</li>';
+				});
+			}
+		)};	
+	
+	
+	}//getDBequipment()
+		
+	getDBequipment();*/
 	
 	});
