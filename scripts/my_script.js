@@ -2,7 +2,7 @@
 	$(function(){
 	alert('Подключена последняя версия jQuery через Google хостинг');
 	});
-
+		getDBequipment();
 	
 	/*
 			rotatePics(3)
@@ -55,19 +55,24 @@
 	function getDBequipment(){
 		$.getJSON("service.php", function(json) {
 			
-			if (json.equipments.length > 0) {
 				$('#CPM1').empty();
 				$('#CPM2').empty();
 								
 				$.each(json.equipments,function() {
 				   var info = '<li>Name: ' +  this['name'] + ' ' +  this['part'] +  this['parameter'] + '</li>';
+				
+				$('#CPM1').append(info);
 				});
-			}
-		)};	
+		
+				
+		
+		
+		
+		});	
 	
 	
 	}//getDBequipment()
 		
-	getDBequipment();
+	
 	
 	});
