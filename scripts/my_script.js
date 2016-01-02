@@ -52,7 +52,7 @@
 	});
 	
 	//Заполняем данными карточки с оборудованием из базы данных
-	/*function getDBequipment(){
+	function getDBequipment(){
 		$.getJSON("service.php", function(json) {
 			
 			if (json.equipments.length > 0) {
@@ -68,6 +68,6 @@
 	
 	}//getDBequipment()
 		
-	getDBequipment();*/
+	getDBequipment();
 	
 	});
