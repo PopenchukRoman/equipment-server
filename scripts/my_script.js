@@ -55,13 +55,33 @@
 	function getDBequipment(){
 		$.getJSON("service.php", function(json) {
 			
-				$('#CPM1').empty();
-				$('#CPM2').empty();
-								
-				$.each(json.equipments,function() {
-				   var info = '<li>Name: ' +  this['name'] + ' ' +  this['part'] +  this['parameter'] + '</li>';
-				
+			$('#CPM1').empty();
+			$('#CPM2').empty();
+												
+			$.each(json.equipments,function() {
+			var info ='<table class="lux">'+
+					'<caption>Данные по ' +this['name'] + '</caption>' +
+					 '<tr>'+
+				       	    '<th>Узел'+'</th>' +
+			  		    '<th>Параметры' +'</th>'+
+			                    '<th>Примечание'+'</th>'+
+			     		 '</tr>'+
+			  	   	 '<tr>'+
+					    '<td>'+this['part']+'</td>'+
+			      		    '<td>'+this['part_desc']+'</td>'+
+			  		    '<td>'+this['note']+'</td>'+
+					 '</tr>'+
+					 '<tr>'+
+					    '<td>'+this['part']+'</td>'+
+					    '<td>'+this['part_desc']+'</td>'+
+			  		    '<td>'+this['note']+'</td>'+
+			 		 '</tr>'+
+				  '</table>';
+				if(this['name']=='CPM1'){
 				$('#CPM1').append(info);
+				}else if(this['name']=='CPM2'){
+				$('#CPM2').append(info);
+				}
 				});
 		
 				
