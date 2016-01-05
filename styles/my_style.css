@@ -37,7 +37,7 @@
 		}
 
 /* Picture Styles overflow:hidden;*/
-	#main	{ 
+#main	{ 
 		position:absolute;
 		background:#181818;
 		color:#111;
@@ -81,11 +81,12 @@
 		 font-weight:bold;
 		 }
 	
-	#main div {
+#main div {
 		padding:10px 10px 8px 10px;
 		*padding-top:3px;
 		*margin-top:-15px;
 		margin-left:40px;
+		margin-right:40px;
 		clear:left;
 		}
 #TFP1-3_info {
@@ -111,42 +112,42 @@
 
 #PDM1_info	{
 		background-image: url("../schems_of_area/pdm1_schema.JPG"); 
-		height:650px;
+		height:780px;
 		padding: 20px 20px 20px 50px;
 		background-repeat:no-repeat;
 		}
 
 #PDM2_info	{
 		background-image: url("../schems_of_area/pdm2_schema.JPG"); 
-		height:650px;
+		height:780px;
 		padding: 0px 0px 0px 0px;
 		background-repeat:no-repeat;
 		}
 
 #MTC2_info 	{
 		background-image: url("../schems_of_area/mtc2_schema.JPG"); 
-		height:650px;
+		height:780px;
 		padding: 0px 0px 0px 0px;
 		background-repeat:no-repeat;
 		}
 
 #ATM140_info	{
 		background-image: url("../schems_of_area/atm140_schema.JPG"); 
-		height:650px;
+		height:780px;
 		padding: 0px 0px 0px 0px;
 		background-repeat:no-repeat;
 		}
 
 #SD8200_info	{
 		background-image: url("../schems_of_area/sd8200_schema.JPG");
-		height:650px;
+		height:780px;
 		padding: 0px 0px 0px 0px;
 		background-repeat:no-repeat;
 		}
 		
 		
-		/*Стиль блоков в которых находятся таблицы с информацией об отдельных единицах оборудования*/
-	 .info {
+		/*Г‘ГІГЁГ«Гј ГЎГ«Г®ГЄГ®Гў Гў ГЄГ®ГІГ®Г°Г»Гµ Г­Г ГµГ®Г¤ГїГІГ±Гї ГІГ ГЎГ«ГЁГ¶Г» Г± ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГҐГ© Г®ГЎ Г®ГІГ¤ГҐГ«ГјГ­Г»Гµ ГҐГ¤ГЁГ­ГЁГ¶Г Гµ Г®ГЎГ®Г°ГіГ¤Г®ГўГ Г­ГЁГї*/
+.info 	{
 		position:absolute;
 		top:150px;
 		left:300px;
@@ -154,11 +155,13 @@
 		height: 500px;
 		overflow: auto;
 		background-color: #f0f0f0;
+		margin-left:0px !important;
+		margin-right:0px !important;
 		z-index: 30;
 		text-align:center;
 		}
 	 
-	/*Стиль ячеек таблицы*/
+	/*Г‘ГІГЁГ«Гј ГїГ·ГҐГҐГЄ ГІГ ГЎГ«ГЁГ¶Г»*/
 .info td { 
 		border-bottom: 1px solid white;
 		border-left:1px solid white;
@@ -171,15 +174,15 @@
 		margin-top:5px;
 		margin-bottom:5px;
 		}
-/*Стиль таблицы с информацией об отдельных единицах оборудования*/
+/*Г‘ГІГЁГ«Гј ГІГ ГЎГ«ГЁГ¶Г» Г± ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГҐГ© Г®ГЎ Г®ГІГ¤ГҐГ«ГјГ­Г»Гµ ГҐГ¤ГЁГ­ГЁГ¶Г Гµ Г®ГЎГ®Г°ГіГ¤Г®ГўГ Г­ГЁГї*/
 .lux	 { 
-		width: inherit; /*ширина таблицы*/
-		border: none; /*1px solid #a52a2a; /*граница таблицы*/
-		border-collapse: collapse; /*убираются двойные линии*/
+		width: inherit; /*ГёГЁГ°ГЁГ­Г  ГІГ ГЎГ«ГЁГ¶Г»*/
+		border: none; /*1px solid #a52a2a; /*ГЈГ°Г Г­ГЁГ¶Г  ГІГ ГЎГ«ГЁГ¶Г»*/
+		border-collapse: collapse; /*ГіГЎГЁГ°Г ГѕГІГ±Гї Г¤ГўГ®Г©Г­Г»ГҐ Г«ГЁГ­ГЁГЁ*/
 		border-spacing: 0;
 		caption-side: top;
 		}
-/*Стиль головы таблицы*/
+/*Г‘ГІГЁГ«Гј ГЈГ®Г«Г®ГўГ» ГІГ ГЎГ«ГЁГ¶Г»*/
 .lux th {
 		border-left:1px solid white;
 		border-right: 1px solid white;
@@ -195,9 +198,13 @@
 		margin: 1px;
 		text-align: center;
 		}
-		
 
-#aim	 {/*Вспомагательная кнопка для определения положения, с выводом координат при щелчке*/
+.lux div{margin-left:0px !important;
+		margin-right:0px !important;
+	
+		}		
+
+#aim	 {/*Г‚Г±ГЇГ®Г¬Г ГЈГ ГІГҐГ«ГјГ­Г Гї ГЄГ­Г®ГЇГЄГ  Г¤Г«Гї Г®ГЇГ°ГҐГ¤ГҐГ«ГҐГ­ГЁГї ГЇГ®Г«Г®Г¦ГҐГ­ГЁГї, Г± ГўГ»ГўГ®Г¤Г®Г¬ ГЄГ®Г®Г°Г¤ГЁГ­Г ГІ ГЇГ°ГЁ Г№ГҐГ«Г·ГЄГҐ*/
 		position:absolute;
 		height: 20px;
 		width: 45px;
@@ -211,7 +218,7 @@
 		z-index: 30;
 		}	
 	
-.button_equip {	/*Стиль прозрачных кнопок, обозначающих единицы оборудования*/
+.button_equip {	/*Г‘ГІГЁГ«Гј ГЇГ°Г®Г§Г°Г Г·Г­Г»Гµ ГЄГ­Г®ГЇГ®ГЄ, Г®ГЎГ®Г§Г­Г Г·Г ГѕГ№ГЁГµ ГҐГ¤ГЁГ­ГЁГ¶Г» Г®ГЎГ®Г°ГіГ¤Г®ГўГ Г­ГЁГї*/
 		position:absolute;
 		height: 20px;
 		width: 45px;
