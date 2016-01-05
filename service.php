@@ -1,15 +1,17 @@
 <?php
  
-		$query = "SELECT name, part, part_desc, parameters, parameters_desc, note FROM tfp1_3 order by note ASC";
+		//$query = "SELECT name, part, part_desc, parameters, parameters_desc, note FROM tfp1_3 order by note ASC";
+		$query = "SELECT * FROM tfp1_3";
 		$result = db_connection($query);
 		
 		$equipments = array();
 
 		while ($row = mysql_fetch_array($result)) {
 			array_push($equipments, array('name' => $row['name'], 'part' => $row['part'], 'part_desc' => $row['part_desc'], 'parameters' => $row['parameters'], 'parameters_desc' => $row['parameters_desc'], 'note' => $row['note']));
+		
 		}
 		
-		
+		echo ($row['image']);
 		echo json_encode(array("equipments" => $equipments), JSON_UNESCAPED_UNICODE);
 		exit;
 

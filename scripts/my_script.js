@@ -76,7 +76,7 @@
 					    '<td>'+this['part_desc']+'</td>'+
 			  		    '<td>'+this['note']+'</td>'+
 			 		 '</tr>'+
-				  '</table>';
+				  '</table>'+this['image']+'</div>';
 				if(this['name']=='CPM1'){
 				$('#CPM1').append(info);
 				}else if(this['name']=='CPM2'){
