@@ -86,7 +86,6 @@
 		*padding-top:3px;
 		*margin-top:-15px;
 		margin-left:40px;
-		margin-right:40px;
 		clear:left;
 		}
 #TFP1-3_info {
@@ -112,35 +111,35 @@
 
 #PDM1_info	{
 		background-image: url("../schems_of_area/pdm1_schema.JPG"); 
-		height:780px;
+		height:650px;
 		padding: 20px 20px 20px 50px;
 		background-repeat:no-repeat;
 		}
 
 #PDM2_info	{
 		background-image: url("../schems_of_area/pdm2_schema.JPG"); 
-		height:780px;
+		height:650px;
 		padding: 0px 0px 0px 0px;
 		background-repeat:no-repeat;
 		}
 
 #MTC2_info 	{
 		background-image: url("../schems_of_area/mtc2_schema.JPG"); 
-		height:780px;
+		height:650px;
 		padding: 0px 0px 0px 0px;
 		background-repeat:no-repeat;
 		}
 
 #ATM140_info	{
 		background-image: url("../schems_of_area/atm140_schema.JPG"); 
-		height:780px;
+		height:650px;
 		padding: 0px 0px 0px 0px;
 		background-repeat:no-repeat;
 		}
 
 #SD8200_info	{
 		background-image: url("../schems_of_area/sd8200_schema.JPG");
-		height:780px;
+		height:650px;
 		padding: 0px 0px 0px 0px;
 		background-repeat:no-repeat;
 		}
