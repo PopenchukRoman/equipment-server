@@ -11,7 +11,7 @@
 		
 		}
 		
-		echo ($row['image']);
+		print ($row['image']);
 		echo json_encode(array("equipments" => $equipments), JSON_UNESCAPED_UNICODE);
 		exit;
 

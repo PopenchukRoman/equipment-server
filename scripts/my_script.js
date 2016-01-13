@@ -72,11 +72,16 @@
 			  		    '<td>'+this['note']+'</td>'+
 					 '</tr>'+
 					 '<tr>'+
-					    '<td>'+this['part']+'</td>'+
-					    '<td>'+this['part_desc']+'</td>'+
-			  		    '<td>'+this['note']+'</td>'+
+					    '<td>'+'</td>'+
+					    '<td>'+'</td>'+
+			  		    '<td>'+'</td>'+
 			 		 '</tr>'+
-				  '</table>'+this['image']+'</div>';
+			 		 '<tr>'+
+					    '<td>'+'</td>'+
+					    '<td>'+'</td>'+
+			  		    '<td>'+'</td>'+
+			 		 '</tr>'+
+				  '</table>'+'<div>'+this['image']+'</div>';
 				if(this['name']=='CPM1'){
 				$('#CPM1').append(info);
 				}else if(this['name']=='CPM2'){
