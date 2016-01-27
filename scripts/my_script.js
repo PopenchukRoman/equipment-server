@@ -64,24 +64,24 @@
 					 '<tr>'+
 				       	    '<th>Узел'+'</th>' +
 			  		    '<th>Параметры' +'</th>'+
-			                    '<th>Примечание'+'</th>'+
-			     		 '</tr>'+
+			                 '</tr>'+
+			                 
 			  	   	 '<tr>'+
-					    '<td>'+this['part']+'</td>'+
-			      		    '<td>'+this['part_desc']+'</td>'+
-			  		    '<td>'+this['note']+'</td>'+
-					 '</tr>'+
+					    '<td>'+this['part1']+'</td>'+
+			      		    '<td>'+this['part1_desc']+'</td>'+
+			  		 '</tr>'+
+			  		 
 					 '<tr>'+
-					    '<td>'+'</td>'+
-					    '<td>'+'</td>'+
-			  		    '<td>'+'</td>'+
-			 		 '</tr>'+
+					    '<td>'+this['part2']+'</td>'+
+					    '<td>'+this['part2_desc']+'</td>'+
+			  		 '</tr>'+
+			  		 
 			 		 '<tr>'+
-					    '<td>'+'</td>'+
-					    '<td>'+'</td>'+
-			  		    '<td>'+'</td>'+
-			 		 '</tr>'+
-				  '</table>'+'<div>'+this['image']+'</div>';
+					    '<td>'+this['part3']+'</td>'+
+					    '<td>'+this['part3_desc']+'</td>'+
+			  		 '</tr>'+
+			  		 
+			  		 '</table>'+'<div><a href='+this['image']+'>'+'</a></div>';
 				if(this['name']=='CPM1'){
 				$('#CPM1').append(info);
 				}else if(this['name']=='CPM2'){
