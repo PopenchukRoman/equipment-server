@@ -1,0 +1,19 @@
+    {
+        "name": "vendor/package",
+        "description": "My awesome project",
+        "minimum-stability": "dev",
+        "authors": [
+            {
+                "name": "John Smith",
+                "email": "name@example.com"
+            }
+        ],
+        "autoload": {
+            "psr-0": {
+                "Blog": "src/"
+            }
+        },
+        "require": {
+            "zendframework/zendframework": "2.1.*"
+        }
+    }

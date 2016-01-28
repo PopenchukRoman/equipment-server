@@ -3,23 +3,6 @@
 	alert('Подключена последняя версия jQuery через Google хостинг');
 	});
 		getDBequipment();
-	
-	/*
-			rotatePics(3)
-			function rotatePics(currentPhoto){
-			 var numberOfPhotos = $('#photos img').length;
-			 currentPhoto = currentPhoto % numberOfPhotos;
-
-			 $('#photos img').eq(currentPhoto).fadeOut(1000, function(){
-				//Переупорядочить z-index
-			$('#photos img').each(function(i){
-			 $(this).css('zIndex', ((numberOfPhotos - i) + currentPhoto) % numberOfPhotos);
-			});
-			 $(this).show();
-			 setTimeout(function(){rotatePics(++currentPhoto);}, 3000);
-			});
-			};
-	*/		
 	$("div .info").toggle();
 	$("div .info").click(function(){
 	  $(this).toggle();
@@ -64,18 +47,15 @@
 					 '<tr>'+
 				       	    '<th>Узел'+'</th>' +
 			  		    '<th>Параметры' +'</th>'+
-			                    '<th>Примечание'+'</th>'+
-			     		 '</tr>'+
+			            '</tr>'+
 			  	   	 '<tr>'+
 					    '<td>'+this['part']+'</td>'+
 			      		    '<td>'+this['part_desc']+'</td>'+
-			  		    '<td>'+this['note']+'</td>'+
-					 '</tr>'+
+			  		    '</tr>'+
 					 '<tr>'+
 					    '<td>'+this['part']+'</td>'+
 					    '<td>'+this['part_desc']+'</td>'+
-			  		    '<td>'+this['note']+'</td>'+
-			 		 '</tr>'+
+			  		    '</tr>'+
 				  '</table>';
 				if(this['name']=='CPM1'){
 				$('#CPM1').append(info);

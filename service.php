@@ -14,7 +14,7 @@
 		exit;
 
 	function db_connection($query) {
-		mysql_connect('127.0.0.1', 'mybd_user', 'admin123')
+		mysql_connect('127.0.0.1', 'mybd_user', 'root')
 			OR die(fail('Could not connect to database.'));
 		mysql_select_db('equipment_server_bd');
 		mysql_query("SET NAMES 'utf8'");
