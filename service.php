@@ -1,31 +1,28 @@
 <?php
- 
-		$query = "SELECT * FROM tfp1_3";
+ 		$query = "SELECT name, uzel1_name, uzel1_desc FROM tfp1_3 order by uzel1_desc ASC ";
 		$result = db_connection($query);
 		
 		$equipments = array();
 
-		while ($row = mysql_fetch_array($result)) {
-			array_push($equipments, array('name' => $row['name'], 'part1' => $row['part1'], 'part1_desc' => $row['part1_desc'], 'part2' => $row['part2'], 'part2_desc' => $row['part2_desc'], 'part3' => $row['part3'], 'part3_desc'=>$row['part3_desc'], 'image'=>$row['image']));
-		
+		while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
+			array_push($equipments, array('name' => $row['name'], 'uzel1_name' => $row['uzel1_name'], 'uzel1_desc' => $row['uzel1_desc']));
 		}
-		
-		print ($row['image']);
-		echo json_encode(array("equipments" => $equipments), JSON_UNESCAPED_UNICODE);
+		echo json_encode(array("equipments" => $equipments));
 		exit;
 
+	
 	function db_connection($query) {
-		mysql_connect('127.0.0.1', 'mybd_user', 'root')
+		mysql_connect('127.0.0.1', 'root', 'root')
 			OR die(fail('Could not connect to database.'));
-		mysql_select_db('equipment_server_bd');
 		mysql_query("SET NAMES 'utf8'");
+		mysql_select_db('mybd_user');
 		return mysql_query($query);
 	}
 	
 	function fail($message) {
 		die(json_encode(array('status' => 'fail', 'message' => $message)));
-	}
+	};
 	function success($message) {
 		die(json_encode(array('status' => 'success', 'message' => $message)));
-	}
+	};
 ?>
