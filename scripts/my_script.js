@@ -43,48 +43,18 @@
 												
 			$.each(json.equipments,function() {
 			var info ='<table class="lux">'+
-					'<caption>Данные по ' +this['name'] + '</caption>' +
-					 '<tr>'+
-				       	    '<th>Узел'+'</th>' +
-			  		    '<th>Параметры' +'</th>'+
-			            '</tr>'+
-			  	   	 '<tr>'+
-					    '<td>'+this['part']+'</td>'+
-			      		    '<td>'+this['part_desc']+'</td>'+
+					    '<caption>Данные по '+this['name']+'</caption>' +
+					    '<tr>'+
+						   '<th>Узел'+'</th>'+
+						   '<th>Параметры'+'</th>'+
+				        '</tr>'+
+			  	   	    
+						'<tr>'+
+						   '<td>'+this['uzel1_name']+'</td>'+
+						   '<td>'+this['uzel1_desc']+'</td>'+
 			  		    '</tr>'+
-					 '<tr>'+
-					    '<td>'+this['part']+'</td>'+
-					    '<td>'+this['part_desc']+'</td>'+
-			  		    '</tr>'+
-				  '</table>';
-
-			                 '</tr>'+
-			                 
-			  	   	 '<tr>'+
-					    '<td>'+this['part1']+'</td>'+
-			      		    '<td>'+this['part1_desc']+'</td>'+
-			  		 '</tr>'+
-			  		 
-					 '<tr>'+
-
-			                 '</tr>'+
-			                 
-			  	   	 '<tr>'+
-					    '<td>'+this['part1']+'</td>'+
-			      		    '<td>'+this['part1_desc']+'</td>'+
-			  		 '</tr>'+
-			  		 
-					 '<tr>'+
-					    '<td>'+this['part2']+'</td>'+
-					    '<td>'+this['part2_desc']+'</td>'+
-			  		 '</tr>'+
-			  		 
-			 		 '<tr>'+
-					    '<td>'+this['part3']+'</td>'+
-					    '<td>'+this['part3_desc']+'</td>'+
-			  		 '</tr>'+
-			  		 
-			  		 '</table>'+'<div><a href='+this['image']+'>'+'</a></div>';
+				      '</table>';
+					  
 				if(this['name']=='CPM1'){
 				$('#CPM1').append(info);
 				}else if(this['name']=='CPM2'){
@@ -92,15 +62,8 @@
 				}
 				});
 		
-				
-		
-		
-		
 		});	
 	
-	
 	}//getDBequipment()
-		
-	
 	
 	});
