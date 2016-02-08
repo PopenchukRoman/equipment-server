@@ -150,7 +150,7 @@
 .info 	{
 		position:absolute;
 		top:150px;
-		left:300px;
+		left:250px;
 		width: 800px;
 		height: 500px;
 		overflow: auto;
@@ -189,7 +189,7 @@
 		background: #a52a2a;
 		color: white; 
 		padding: 4px;
-		width:50%;
+		/*width:20%;*/
 		}
 .lux caption {
 		background: #696969;
@@ -202,8 +202,11 @@
 
 .lux div{margin-left:0px !important;
 		margin-right:0px !important;
-	
-		}		
+		}
+.lux td{
+		background: #e1e1e1;
+		}
+		
 
 #aim	 {/*Âñïîìàãàòåëüíàÿ êíîïêà äëÿ îïðåäåëåíèÿ ïîëîæåíèÿ, ñ âûâîäîì êîîðäèíàò ïðè ùåë÷êå*/
 		position:absolute;

@@ -53,17 +53,30 @@
 						   '<td>'+this['uzel1_name']+'</td>'+
 						   '<td>'+this['uzel1_desc']+'</td>'+
 			  		    '</tr>'+
+						
+						'<tr>'+
+						   '<td>'+this['uzel2_name']+'</td>'+
+						   '<td>'+this['uzel2_desc']+'</td>'+
+			  		    '</tr>'+
 				      '</table>';
-					  
-				if(this['name']=='CPM1'){
-				$('#CPM1').append(info);
-				}else if(this['name']=='CPM2'){
-				$('#CPM2').append(info);
-				}
-				});
+				switch (this['name']){
+				case 'CPM1':
+					$('#CPM1').append(info);
+					break;
+				case 'CPM2':
+					$('#CPM2').append(info);
+					break;
+				case 'M7':
+					$('#M7').append(info);
+					break;		
+				default:
+				break;	
+				}	
+			});
+				
 		
 		});	
 	
-	}//getDBequipment()
+	}//end getDBequipment
 	
 	});
