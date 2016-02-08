@@ -47,6 +47,7 @@
 					 '<tr>'+
 				       	    '<th>Узел'+'</th>' +
 			  		    '<th>Параметры' +'</th>'+
+<<<<<<< HEAD
 			            '</tr>'+
 			  	   	 '<tr>'+
 					    '<td>'+this['part']+'</td>'+
@@ -57,6 +58,26 @@
 					    '<td>'+this['part_desc']+'</td>'+
 			  		    '</tr>'+
 				  '</table>';
+=======
+			                 '</tr>'+
+			                 
+			  	   	 '<tr>'+
+					    '<td>'+this['part1']+'</td>'+
+			      		    '<td>'+this['part1_desc']+'</td>'+
+			  		 '</tr>'+
+			  		 
+					 '<tr>'+
+					    '<td>'+this['part2']+'</td>'+
+					    '<td>'+this['part2_desc']+'</td>'+
+			  		 '</tr>'+
+			  		 
+			 		 '<tr>'+
+					    '<td>'+this['part3']+'</td>'+
+					    '<td>'+this['part3_desc']+'</td>'+
+			  		 '</tr>'+
+			  		 
+			  		 '</table>'+'<div><a href='+this['image']+'>'+'</a></div>';
+>>>>>>> ce0ec28c6f19e6f8845766fcdbbc150d622ed8e1
 				if(this['name']=='CPM1'){
 				$('#CPM1').append(info);
 				}else if(this['name']=='CPM2'){
